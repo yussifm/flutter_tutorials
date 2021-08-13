@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_totu/Pages/Quiz_page.dart';
 
 import 'Pages/AskMe_page.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Ask(),
+      home: Quiz(),
     );
   }
 }
