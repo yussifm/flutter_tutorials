@@ -62,7 +62,7 @@ class _QuizState extends State<Quiz> {
                 QuizBrain().getQuestions(qNum),
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontSize: 30.0,
                 ),
               ),
