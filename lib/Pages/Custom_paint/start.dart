@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Star extends StatelessWidget {
+  const Star({Key? key, required this.color, required this.size})
+      : super(key: key);
+
   final Color color;
   final double size;
-  
-  const Star({Key? key, required this.color, required this.size}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,22 +13,24 @@ class Star extends StatelessWidget {
       height: size,
       width: size,
       child: CustomPaint(
-        painter:  _StarPainter(color),
+        painter: _StarPainter(color),
       ),
-    )
+    );
   }
 }
 
 class _StarPainter extends CustomPainter {
-  final Color color;
   _StarPainter(this.color);
+
+  final Color color;
+
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint() ..color = color;
+    final paint = Paint()..color = color;
 
     final path = new Path();
     path.moveTo(size.width * 0.5, 0);
-    path.lineTo(size.width * 0.618, size.height* 0.382);
+    path.lineTo(size.width * 0.618, size.height * 0.382);
     path.lineTo(size.width, size.height * 0.382);
     path.lineTo(size.width * 0.691, size.height * 0.618);
     path.lineTo(size.width * 0.809, size.height);
@@ -44,7 +47,7 @@ class _StarPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
-    throw UnimplementedError();
+
+    return false;
   }
 }

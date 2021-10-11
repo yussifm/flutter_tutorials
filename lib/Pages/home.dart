@@ -4,6 +4,7 @@ import 'package:flutter_totu/Pages/Bmi/Bmi_page.dart';
 import 'package:flutter_totu/Pages/Custom_paint/Custom_paint.dart';
 import 'package:flutter_totu/Pages/Dice_page.dart';
 import 'package:flutter_totu/Pages/ProviderExample/provider_page.dart';
+import 'package:flutter_totu/Pages/Streams/main_stream.dart';
 import 'package:flutter_totu/Pages/mi_page.dart';
 import 'package:flutter_totu/Utility/Constants.dart';
 
@@ -71,8 +72,7 @@ class ImageDemo extends StatelessWidget {
               },
               title: "BMI Calculator",
               color: Colors.greenAccent),
-
-                linkButtons(
+          linkButtons(
               onPress: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Custom_paint()));
@@ -86,6 +86,13 @@ class ImageDemo extends StatelessWidget {
               },
               title: "Provider EXample App",
               color: Colors.lime),
+         linkButtons(
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => StreamHomePage()));
+              },
+              title: "Stream EXample App",
+              color: Colors.deepOrangeAccent),
         ],
       ),
     );

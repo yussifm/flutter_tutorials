@@ -47,11 +47,11 @@ class MiPage extends StatelessWidget {
               margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
               child: ListTile(
                 leading: Icon(
-                  Icons.phone_rounded,
+                  Icons.web_rounded,
                   color: Colors.pink,
                 ),
                 title: Text(
-                  "+233 0542460098",
+                  "yussifm@GitHub.com",
                   style: TextStyle(
                     letterSpacing: 3.0,
                     color: Colors.pink[900],
@@ -64,11 +64,11 @@ class MiPage extends StatelessWidget {
               margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
               child: ListTile(
                   leading: Icon(
-                    Icons.email_rounded,
+                    Icons.screen_lock_landscape_rounded,
                     color: Colors.pink,
                   ),
                   title: Text(
-                    "codedspartant@gamil.com",
+                    "Coded Studios@youtube.com",
                     style: TextStyle(
                       letterSpacing: 3.0,
                       color: Colors.pink[900],
