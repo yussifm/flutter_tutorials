@@ -10,7 +10,7 @@ class ShapeAnimation extends StatefulWidget {
 class _ShapeAnimationState extends State<ShapeAnimation>
     with SingleTickerProviderStateMixin {
   late Animation<double> animation;
-  double pos = 0;
+  double pos = 0.0;
   late AnimationController controller;
 
   void moveBall() {
