@@ -39,10 +39,12 @@ class _MyAnimationHState extends State<MyAnimationH> {
         ),
         body: Center(
           child: AnimatedContainer(
-            width: 100,
-            height: 100,
+            width: sizes[itera],
+            height: sizes[itera],
             duration: Duration(seconds: 1),
             color: colors[itera],
+            margin: EdgeInsets.only(top: tops[itera]),
+            
           ),
         ));
   }
