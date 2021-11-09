@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_totu/Pages/Animation_page/myAnimation.dart';
 import 'package:flutter_totu/Pages/AskMe_page.dart';
 import 'package:flutter_totu/Pages/Bmi/Bmi_page.dart';
 import 'package:flutter_totu/Pages/Custom_paint/Custom_paint.dart';
@@ -15,19 +16,19 @@ class ImageDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Coded Studios',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 30.0,
-              letterSpacing: 5.0,
-            ),
+      appBar: AppBar(
+        title: Text(
+          'Coded Studios',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 30.0,
+            letterSpacing: 5.0,
           ),
-          backgroundColor: Colors.blueGrey[900],
-          centerTitle: true,
         ),
-        body: ListView(
+        backgroundColor: Colors.blueGrey[900],
+        centerTitle: true,
+      ),
+      body: ListView(
         children: [
           Text(
             "Projects",
@@ -86,13 +87,20 @@ class ImageDemo extends StatelessWidget {
               },
               title: "Provider EXample App",
               color: Colors.lime),
-         linkButtons(
+          linkButtons(
               onPress: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => StreamHomePage()));
               },
               title: "Stream EXample App",
               color: Colors.deepOrangeAccent),
+          linkButtons(
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MyAnima()));
+              },
+              title: "Animation EXample App",
+              color: Colors.purpleAccent),
         ],
       ),
     );
