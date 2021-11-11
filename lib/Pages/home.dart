@@ -8,6 +8,7 @@ import 'package:flutter_totu/Pages/ProviderExample/provider_page.dart';
 import 'package:flutter_totu/Pages/Streams/main_stream.dart';
 import 'package:flutter_totu/Pages/mi_page.dart';
 import 'package:flutter_totu/Utility/Constants.dart';
+import 'package:flutter_totu/imageCatch/imageCatch.dart';
 
 import 'Quiz_page.dart';
 
@@ -101,6 +102,14 @@ class ImageDemo extends StatelessWidget {
               },
               title: "Animation EXample App",
               color: Colors.purpleAccent),
+
+          linkButtons(
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => NetImgCatch()));
+              },
+              title: "Network Image Catcher App",
+              color: Colors.lightGreen),
         ],
       ),
     );
