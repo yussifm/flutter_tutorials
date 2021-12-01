@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_totu/Pages/Animation_page/myAnimation.dart';
 import 'package:flutter_totu/Pages/AskMe_page.dart';
+import 'package:flutter_totu/Pages/BlocCount/HomeCounter.dart';
 import 'package:flutter_totu/Pages/Bmi/Bmi_page.dart';
 import 'package:flutter_totu/Pages/Custom_paint/Custom_paint.dart';
 import 'package:flutter_totu/Pages/Dice_page.dart';
@@ -110,6 +111,14 @@ class ImageDemo extends StatelessWidget {
               },
               title: "Network Image Catcher App",
               color: Colors.lightGreen),
+
+                 linkButtons(
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => CounterHome()));
+              },
+              title: "Bloc Cubit Counter App",
+              color: Colors.amberAccent),
         ],
       ),
     );
