@@ -35,7 +35,6 @@ dependencies:
   bloc_test: ^8.5.0
   form_bloc: ^0.20.6
   bloc_concurrency: ^0.1.0
-  camera: ^0.9.4+5
   image_picker: ^0.8.4+4
   firebase: ^9.0.2
   firebase_core: ^1.10.0
